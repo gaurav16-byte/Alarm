@@ -1,0 +1,36 @@
+**********************************
+   ****************************
+TO BE CLONED IN THE HOME DIRECTORY
+   ****************************
+**********************************
+
+
+WELCOME TO TRIAL ALARM CLOCK PROJECT,,
+To set the alarm you have to enter in the following format-------
+**minutes** **hours** **days** on which you want your alarm to repeat 
+
+Ex. ./clock.sh minutess hours days
+
+If you want the alarm to work everyday then enter the time,
+pass an argument by the name of ''daily'',, 
+Ex. 00 00 daily
+"This will ring an alarm daily at midnight"
+
+If you want to ring an alarm once just enter the time add the argument ''once''and press enter
+
+If you want to repeat your alarm on specific days then pass those days in the form of numbers
+ provided below for each day.
+> Mon - 1
+> Tue - 2
+> Wed - 3 
+> Thu - 4
+> Fri - 5
+> Sat - 6
+> Sun - 0
+
+Ex. 00 00 1,3,5
+--This will ring the alarm on Mondays, Wednesdays and Fridays at midnight..
+
+If you want to ring the alarm on a range of days then,....
+Ex. 00 00 1-5
+this will run the alarm weekly from Monday to Fridays 

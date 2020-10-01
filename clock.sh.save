@@ -1,0 +1,15 @@
+cd
+pwd=$PWD
+a=$1
+pactl -- set-sink-volume 0 200%
+if [[ $3 -eq 'daily' ]]
+then
+	echo $1 $2 '* * * play '$pwd'/Alarm/beep.mp3 | pactl -- set-sink-volume 0 100%' | crontab -
+elif [[ $3 -eq 'once' ]]
+then
+	echo $1 $2 '* * * play '$pwd'/Alarm/beep.mp3 | ' | crontab -
+	let a=$a+1
+	echo $a $2 '* * * echo " " | crontab - ' | crontab -
+else
+	echo $1 $2 '* * $3-$4-$5-$6-$7-$8' | crontab -
+fi
