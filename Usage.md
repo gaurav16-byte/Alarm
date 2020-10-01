@@ -1,6 +1,6 @@
-##ALARM PROJECT FOR MAC AND LINUX
+# ALARM PROJECT FOR MAC AND LINUX
 
-##USAGE DETAILS:-
+## USAGE DETAILS:-
 
 **Always run with ./clock------.sh** *./clock_lin.sh* for *linux and debian* and *./clock_mac.sh* for *mac*
 
